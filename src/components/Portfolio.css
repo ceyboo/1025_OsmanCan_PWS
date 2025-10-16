@@ -1,0 +1,33 @@
+.content{
+    display: flex;
+    height: 35vh;
+    background-color: white;
+    color: black;
+    padding-left: 2rem;
+    width: 100%;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.sample{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 0rem;
+    padding: 1rem 2rem;
+    width: 60%;
+}
+
+.sample img{
+    padding: 1rem 1rem;
+    width: 150px;
+    height: 150px;
+}
+
+.content h2{
+    font-size: 4rem;
+}

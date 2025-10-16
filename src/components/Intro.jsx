@@ -1,21 +1,48 @@
+import { useState } from 'react';
 import './Intro.css'
+import Portfolio from './Portfolio';
 
 export default function Intro(){
+    const [isOpen, setIsOpen] = useState(null);
+
+    const toggleOpen = id => () => setIsOpen(
+        isOpen => isOpen === id ? null : id,
+    );
 
     return (
         <>
             <div id="main-context">
                 <section id="illustration-context">
-                    <h1>Illustration</h1>
+                    <Portfolio 
+                        title="Illustration"
+                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. "
+                        isOpen={isOpen === 0}
+                        toggle={toggleOpen(0)}
+                    />
                 </section>
                 <section id="desing-context">
-                    <h1>Design</h1>
+                    <Portfolio 
+                        title="Design"
+                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. "
+                        isOpen={isOpen === 1}
+                        toggle={toggleOpen(1)}
+                    />
                 </section>
-                <section id="motion-context">
-                    <h1>Motion</h1>
+                <section id="motion-context">                    
+                    <Portfolio 
+                        title="Motion"
+                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. "
+                        isOpen={isOpen === 2}
+                        toggle={toggleOpen(2)}
+                    />
                 </section>
-                <section id="aboutme-context">
-                    <h1>About Me</h1>
+                <section id="aboutme-context">                    
+                    <Portfolio 
+                        title="About Me"
+                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. "
+                        isOpen={isOpen === 3}
+                        toggle={toggleOpen(3)}
+                    />
                 </section>
                 <section id="footer">
                     <p>Business Inquries</p>
