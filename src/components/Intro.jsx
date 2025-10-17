@@ -12,13 +12,14 @@ export default function Intro(){
     return (
         <>
             <div id="main-context">
-                <section id="header">
+                <header id="header">
                     <h1>OCK</h1>
-                </section>
+                </header>
                 <section id="illustration-context">
                     <Portfolio 
                         title="Illustration"
-                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. "
+                        link="illustration"
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. "
                         isOpen={isOpen === 0}
                         toggle={toggleOpen(0)}
                     />
@@ -26,7 +27,8 @@ export default function Intro(){
                 <section id="desing-context">
                     <Portfolio 
                         title="Design"
-                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. "
+                        link="design"
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. "
                         isOpen={isOpen === 1}
                         toggle={toggleOpen(1)}
                     />
@@ -34,7 +36,8 @@ export default function Intro(){
                 <section id="motion-context">                    
                     <Portfolio 
                         title="Motion"
-                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. "
+                        link="motion"
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. "
                         isOpen={isOpen === 2}
                         toggle={toggleOpen(2)}
                     />
@@ -42,15 +45,16 @@ export default function Intro(){
                 <section id="aboutme-context">                    
                     <Portfolio 
                         title="About Me"
-                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. "
+                        link="aboutme"
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. "
                         isOpen={isOpen === 3}
                         toggle={toggleOpen(3)}
                     />
                 </section>
-                <section id="footer">
+                <footer id="footer">
                     <p>Business Inquries</p>
                     <a href="">osmancankaraci@gmail.com</a>
-                </section>
+                </footer>
             </div>
         </>
     )
