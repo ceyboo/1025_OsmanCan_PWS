@@ -12,6 +12,9 @@ export default function Intro(){
     return (
         <>
             <div id="main-context">
+                <section id="header">
+                    <h1>OCK</h1>
+                </section>
                 <section id="illustration-context">
                     <Portfolio 
                         title="Illustration"

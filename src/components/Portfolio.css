@@ -1,6 +1,6 @@
 .content{
     display: flex;
-    height: 35vh;
+    height: 30vh;
     background-color: white;
     color: black;
     padding-left: 2rem;
@@ -30,4 +30,12 @@
 
 .content h2{
     font-size: 4rem;
+}
+
+@media (max-width: 1600px) {
+
+    .content{
+        height: 45vh;
+    }
+
 }
