@@ -1,13 +1,15 @@
 .content{
     display: flex;
-    height: 30vh;
+    height: 35vh;
     background-color: white;
     color: black;
-    padding-left: 2rem;
+    padding-left: 3rem;
     width: 100%;
 }
 
 .title{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 900;
     display: flex;
     flex-direction: column;
     width: 35%;
@@ -29,7 +31,23 @@
 }
 
 .content h2{
-    font-size: 4rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.content p{
+    font-weight: 500;
+    text-align: justify;
+}
+
+footer{
+    font-weight: 500;
+    text-align: justify;
+}
+
+footer a{
+    font-weight: 500;
+    color: #a47aff;
 }
 
 .action {
@@ -39,7 +57,7 @@
 }
 
 .action i{
-    font-size: 2.5rem;
+    font-size: 2.0rem;
 }
 
 .action div:last-of-type {
@@ -47,8 +65,9 @@
 }
 
 .action div p{
+    font-size: 0.75rem;
     text-align: center;
-    line-height: 0.5rem;
+    line-height: 0.75rem;
 }
 
 @media (max-width: 1600px) {

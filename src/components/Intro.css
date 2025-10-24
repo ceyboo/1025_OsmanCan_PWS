@@ -1,5 +1,8 @@
 #main-context{
-    font-family: "Bebas Neue", sans-serif;
+    /*font-family: "Bebas Neue", sans-serif;*/
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 900;
+    font-style: normal;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -8,8 +11,10 @@
 
 #main-context button{
     font-size: 8rem;
-    line-height: 6rem;
-    padding-top: 1rem;
+    line-height: 5rem;
+    padding-left: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 1.5rem;
     transition: all ease-in-out 0.5s;
 }
 
@@ -21,40 +26,34 @@
     transform: scale(0.7);
 }
 
-#footer{
-    background-color: white;
-    color: black;
-    height: 8vh;
-    line-height: 1.2rem;
-    padding-top: 1rem;
-    padding-left: 1rem;
+#main-context section:hover{
+    background-color: #a47aff;
 }
 
-#main-context section:hover{
-    padding-left: 0rem;
-    background-color: #efa59a;
+#header i{
+    font-size: 2rem;
+    padding-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+#footer{
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    height: 3rem;
+    line-height: 3rem;
+    padding-left: 3rem;
+    margin-top: 4rem;
 }
 
 @media (max-width: 1600px) {
     
     #main-context button{
         font-size: 6rem;
-        line-height: 4.5rem;
+        line-height: 3.5rem;
         padding-top: 0.75rem;
     }
     
-    #footer{
-        font-size: 1rem;
-        height: 10vh;
-        line-height: 1rem;
-        padding-top: 1.5rem;
-        padding-left: 0.5rem;
-    }
-    
-    #main-context button:hover{
-        padding-left: 2rem;
-    }
-
 }
 
 @media (max-width: 600px) {
