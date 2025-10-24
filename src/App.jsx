@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom/cjs/react-router-dom.min'
 import Intro from './components/Intro'
 import Illustration from './components/Illustration'
 import Design from './components/Design'
-import Motion from './components/Animation'
+import Animation from './components/Animation'
 import AboutMe from './components/AboutMe'
 import Login from './components/Login'
 

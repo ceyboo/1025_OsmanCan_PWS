@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Intro.css'
 import Portfolio from './Portfolio';
+import AboutMe from './AboutMe';
 
 export default function Intro(){
     const [isOpen, setIsOpen] = useState(null);
@@ -43,10 +44,10 @@ export default function Intro(){
                     />
                 </section>
                 <section id="aboutme-context">                    
-                    <Portfolio 
+                    <AboutMe 
                         title="ABOUT ME"
                         link="aboutme"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id est vulputate, bibendum libero vel, pellentesque nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                         isOpen={isOpen === 3}
                         toggle={toggleOpen(3)}
                     />

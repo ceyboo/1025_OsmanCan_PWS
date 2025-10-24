@@ -1,0 +1,56 @@
+.detail-content{
+    font-family: "Barlow Condensed", sans-serif;
+    display: flex;
+    height: 90vh;
+    background-color: white;
+    color: black;
+    padding-left: 3rem;
+    width: 100%;
+}
+
+.detail-title{
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.detail-sample{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    width: 60%;
+}
+
+.detail-sample img{
+    padding: 1rem 1rem;
+    width: 150px;
+    height: 150px;
+}
+
+.detail-content h2{
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.detail-content p{
+    font-weight: 500;
+    text-align: justify;
+}
+
+.detail-action {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.detail-action i{
+    font-size: 2rem;
+}
+
+.detail-action div p{
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 0.75rem;
+}
